@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <meta name="image" property="og:image" content="../app_screenshot.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-bar">
+        <span class="app-name"><a href="#">To Do List</a></span>
+        <ul class="nav-items">
+          <li class="item">
+            Sort By
+            <select id="cars" class="sort-item">
+              <option class="options" label="select" value="" selected></option>
+              <option class="options" value="timeasc">Time Asc</option>
+              <option class="options" value="timedes">Time Des</option>
+              <option class="options" value="doneasc">Done Asc</option>
+              <option class="options" value="donedes">Done Des</option>
+              <option class="options" value="sizeasc">Size Asc</option>
+              <option class="options" value="sizedes">Size Des</option>
+            </select>
+          </li>
+          <li class="item"><a href="#">Del Sel</a></li>
+          <li class="item"><a href="#">Resync</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main" class="main">
+      <h1 class="app-heading">Tasks</h1>
+      <form class="app">
+        <div class="refresh custom-row">
+          <p class="title">To-Do List</p>
+          <i class="far fa-sync"></i>
+        </div>
+        <div class="add custom-row">
+          <span contenteditable="true" class="input placeholder"></span>
+          <i class="return">+</i>
+        </div>
+        <div class="to-do-list"></div>
+        <div class="clear-all custom-row">
+          <span class="clear-text">Clear all completed</span>
+        </div>
+      </form>
+    </main>
+    <footer class="footer"><span class="footer-text"></span></footer>
+  </body>
+</html>
